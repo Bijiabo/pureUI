@@ -29,3 +29,10 @@
                 </div>
             </div>
 
+#缓存
+
+$.ui.cache
+
+ - hashContentDivSelected 是否手动设定默认面板
+ - activeContentDiv 当前活动面板的id
+

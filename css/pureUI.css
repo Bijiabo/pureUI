@@ -47,9 +47,12 @@ The content `<div>` is where all your content goes.
 .content {
     margin: 0 auto;
     padding: 0 2em;
+    box-sizing: border-box;/*add*/
+    width: 100%;/*add*/
     max-width: 800px;
     margin-bottom: 50px;
     line-height: 1.6em;
+    overflow: hidden;
 }
 
 .header {
@@ -272,6 +275,13 @@ Hides the menu at `48em`, but modify this based on your app's needs.
 /*
 public
 */
+#pure-shadow{
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
 #layout.active #pure-shadow{
     position: fixed;
     top: 0;
@@ -281,5 +291,32 @@ public
     background-color: rgba(0,0,0,0.3);
 }
 #content>div{
-    display: none;
+    /*display: none;*/
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    position: relative;
+    left: 150%;
+    /*float: left;*/
+    height: 0;
+    overflow: hidden;
+}
+@keyframes hide-slide
+{
+    from {background: red;}
+    to {background: yellow;}
+}
+#content>div.pure-hide-slide{
+    /*display: none;
+    animation: hide-slide 2s;*/
+    left: -150%;
+    height: 0;
+    overflow: hidden;
+}
+#content>div.pure-show-slide{
+    left: 0;
+    height: auto;
+    overflow: auto;
 }

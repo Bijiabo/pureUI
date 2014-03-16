@@ -3,9 +3,50 @@
  * */
 $.ui = {
     cache:{
-        hashContentDivSelected:false
+        hashContentDivSelected:false,
+        activeContentDiv:''
+    },
+    show:function(el,transformation){
+        /*
+        * hide active content div and load new content div
+        * */
+        $($('#'+$.ui.cache.activeContentDiv).get(0)).removeClass('pure-show-slide').addClass('pure-hide-slide');
+        el.addClass('pure-show-slide');
+     },
+    loadContentDiv:function(item){
+        if(typeof item === 'object'){
+            item.show();
+            $.ui.show(item);
+//            $('#'+this.cache.activeContentDiv).hide();
+            this.cache.activeContentDiv=item.attr('id');
+        }else if(typeof item === 'string' && $('#'+item).length>0){
+            $($('#'+item).get(0)).show();
+            $.ui.show($($('#'+item).get(0)));
+//            $('#'+this.cache.activeContentDiv).hide();
+            this.cache.activeContentDiv=item;
+        }else{
+            console.log('Error in $.ui.loadContentDiv: no element found to load:(');
+        }
+    },
+    showDeafultContentDiv:function(){
+        /*
+         * show default content div
+         * */
+        var contentDiv = $('#content>div');
+        for(var i=0;i<contentDiv.length;i++){
+            var item = $(contentDiv[i]);
+            if(item.data('selected')===true){
+                $.ui.cache.hashContentDivSelected=true;
+                $.ui.loadContentDiv(item);
+            }
+        }
+        if(!$.ui.cache.hashContentDivSelected){
+            $.ui.loadContentDiv($(contentDiv[0]));
+        }
     }
 };
+
+
 (function (window, document) {
 
     var layout   = document.getElementById('layout'),
@@ -44,19 +85,7 @@ $.ui = {
         var active = 'active';
         $('#layout,#menu,#menuLink').removeClass(active);
     }
-     /*
-    * show default content div
-    * */
-    var contentDiv = $('#content>div');
-    for(var i=0;i<contentDiv.length;i++){
-        var item = $(contentDiv[i]);
-        if(item.data('selected')===true){
-            item.css('display','inline');
-            $.ui.cache.hashContentDivSelected=true;
-        }
-    }
-    if(!$.ui.cache.hashContentDivSelected){
-        $(contentDiv[0]).css('display','inline');
-    }
+
+    $.ui.showDeafultContentDiv();
 
 }(this, this.document));
