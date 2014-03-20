@@ -29,6 +29,8 @@
                 </div>
             </div>
 
+面板加载后执行js:data-load
+
 #缓存
 
 $.ui.cache
@@ -36,3 +38,6 @@ $.ui.cache
  - hashContentDivSelected 是否手动设定默认面板
  - activeContentDiv 当前活动面板的id
 
+#CSS补充
+
+文本对其: .text-left/center/right

@@ -1,5 +1,6 @@
 body {
     color: #777;
+    overflow-x: hidden;
 }
 
 .pure-img-responsive {
@@ -75,7 +76,7 @@ The content `<div>` is where all your content goes.
     }
 
 .content-subhead {
-    margin: 50px 0 20px 0;
+    /*margin: 50px 0 20px 0;*/
     font-weight: 300;
     color: #888;
 }
@@ -226,6 +227,24 @@ show header-bar in `48em`
         font-weight: normal;
         font-size: 1.6em;
     }
+    #content>div{
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        position: absolute;
+        top: 2.5em;
+        left: 150%;
+        right: 0;
+        height: auto;
+        overflow: auto;
+        padding: 1.5em;
+        opacity: 0;
+    }
+    #layout.active #pure-shadow{
+        left: 60%;
+    }
 }
 /*
 Hides the menu at `48em`, but modify this based on your app's needs.
@@ -271,6 +290,21 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     #layout.active .menu-link {
         left: 150px;
     }
+    #content>div{
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        position: absolute;
+        top: 7em;
+        left: 150%;
+        right: 0;
+        height: auto;
+        overflow: auto;
+        padding: 1.5em;
+        opacity: 0;
+    }
 }
 /*
 public
@@ -282,41 +316,58 @@ public
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
-#layout.active #pure-shadow{
+#layout.active #pure-shadow,.mask-shadow{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
+    z-index: 800;
 }
-#content>div{
-    /*display: none;*/
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+#main{
     position: relative;
-    left: 150%;
-    /*float: left;*/
-    height: 0;
-    overflow: hidden;
+    width: 100%;
 }
-@keyframes hide-slide
-{
-    from {background: red;}
-    to {background: yellow;}
-}
-#content>div.pure-hide-slide{
-    /*display: none;
-    animation: hide-slide 2s;*/
-    left: -150%;
-    height: 0;
-    overflow: hidden;
-}
-#content>div.pure-show-slide{
-    left: 0;
+#pure-mask{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 50%;
     height: auto;
-    overflow: auto;
+    margin: 0 0 0 -25%;
+    z-index: 990;
+    background: rgba(255,255,255,0.9);
+    padding: 1em;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
 }
+#content>div hr{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #EEE;
+    border-right-color: #EEE;
+    border-bottom-color: #EEE;
+    border-left-color: #EEE;
+    background-color: #EEE;
+    opacity: 0.5;
+}
+.button-xsmall {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}
+.text-left{text-align: left;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
