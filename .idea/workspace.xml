@@ -44,7 +44,7 @@
       <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="6" selection-start="1011" selection-end="1011" vertical-scroll-proportion="-24.172413" vertical-offset="55" max-vertical-offset="864">
+            <state line="31" column="19" selection-start="910" selection-end="910" vertical-scroll-proportion="-19.241379" vertical-offset="0" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
@@ -53,19 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ui.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="43" selection-start="2597" selection-end="2597" vertical-scroll-proportion="0.56109726" vertical-offset="864" max-vertical-offset="3132">
+            <state line="59" column="41" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="3132">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pureUI.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pureUI.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/pureUI.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="372" column="11" selection-start="7750" selection-end="7750" vertical-scroll-proportion="0.0" vertical-offset="5948" max-vertical-offset="6804">
+            <state line="256" column="20" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.7531172" vertical-offset="4004" max-vertical-offset="6804">
               <folding />
             </state>
           </provider>
@@ -88,16 +88,16 @@
         <option value="$PROJECT_DIR$/js/appframework.js" />
         <option value="$PROJECT_DIR$/css/extend.css" />
         <option value="$PROJECT_DIR$/css/side-menu.css" />
-        <option value="$PROJECT_DIR$/css/pureUI.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/demo/index.html" />
         <option value="$PROJECT_DIR$/js/ui.js" />
+        <option value="$PROJECT_DIR$/css/pureUI.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-1087" />
+    <option name="x" value="1984" />
+    <option name="y" value="-7" />
     <option name="width" value="1857" />
     <option name="height" value="1088" />
   </component>
@@ -286,7 +286,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-1087" width="1857" height="1088" extended-state="6" />
+    <frame x="1984" y="-7" width="1857" height="1088" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -448,23 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/pureUI.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="372" column="11" selection-start="7750" selection-end="7750" vertical-scroll-proportion="0.0" vertical-offset="5948" max-vertical-offset="6804">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="6" selection-start="1011" selection-end="1011" vertical-scroll-proportion="-24.172413" vertical-offset="55" max-vertical-offset="864">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="51" selection-start="928" selection-end="928" vertical-scroll-proportion="-11.555555" vertical-offset="174" max-vertical-offset="1872">
@@ -474,7 +457,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="43" selection-start="2597" selection-end="2597" vertical-scroll-proportion="0.56109726" vertical-offset="864" max-vertical-offset="3132">
+        <state line="59" column="41" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="3132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="19" selection-start="910" selection-end="910" vertical-scroll-proportion="-19.241379" vertical-offset="0" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/pureUI.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="256" column="20" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.7531172" vertical-offset="4004" max-vertical-offset="6804">
           <folding />
         </state>
       </provider>

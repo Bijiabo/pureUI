@@ -254,7 +254,7 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         margin: 0;
         color: #333;
         text-align: center;
-        padding: 2.5em 2em 0;
+        padding: 1em;
         border-bottom: 1px solid #eee;
     }
         #header h1 {
