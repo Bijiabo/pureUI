@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="51" selection-start="928" selection-end="928" vertical-scroll-proportion="-11.555555" vertical-offset="174" max-vertical-offset="1872">
+            <state line="32" column="6" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-0.64903224" vertical-offset="1079" max-vertical-offset="1854">
               <folding />
             </state>
           </provider>
@@ -62,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pureUI.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pureUI.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/pureUI.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="20" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.7531172" vertical-offset="4004" max-vertical-offset="6804">
+            <state line="235" column="27" selection-start="4997" selection-end="4997" vertical-scroll-proportion="0.0" vertical-offset="4004" max-vertical-offset="6804">
               <folding />
             </state>
           </provider>
@@ -89,9 +89,9 @@
         <option value="$PROJECT_DIR$/css/extend.css" />
         <option value="$PROJECT_DIR$/css/side-menu.css" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/demo/index.html" />
         <option value="$PROJECT_DIR$/js/ui.js" />
         <option value="$PROJECT_DIR$/css/pureUI.css" />
+        <option value="$PROJECT_DIR$/demo/index.html" />
       </list>
     </option>
   </component>
@@ -215,6 +215,7 @@
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="/var/www/thinksns/apps/w3g" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -409,7 +410,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="627" column="20" selection-start="25502" selection-end="25502" vertical-scroll-proportion="0.20645161" vertical-offset="11094" max-vertical-offset="12096">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -418,7 +419,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="24636" selection-end="24636" vertical-scroll-proportion="0.03925845" vertical-offset="0" max-vertical-offset="917">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -427,7 +428,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="0" selection-start="26297" selection-end="26297" vertical-scroll-proportion="0.9749182" vertical-offset="60" max-vertical-offset="1062">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -436,7 +437,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="2774" column="38" selection-start="105889" selection-end="105889" vertical-scroll-proportion="0.22900763" vertical-offset="49722" max-vertical-offset="50832">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -448,16 +449,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
+    <entry file="file://$PROJECT_DIR$/js/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="51" selection-start="928" selection-end="928" vertical-scroll-proportion="-11.555555" vertical-offset="174" max-vertical-offset="1872">
+        <state line="59" column="41" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="3132">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui.js">
+    <entry file="file://$PROJECT_DIR$/css/pureUI.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="41" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.0" vertical-offset="864" max-vertical-offset="3132">
+        <state line="235" column="27" selection-start="4997" selection-end="4997" vertical-scroll-proportion="0.0" vertical-offset="4004" max-vertical-offset="6804">
           <folding />
         </state>
       </provider>
@@ -472,9 +473,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/pureUI.css">
+    <entry file="file://$PROJECT_DIR$/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="20" selection-start="5415" selection-end="5415" vertical-scroll-proportion="0.7531172" vertical-offset="4004" max-vertical-offset="6804">
+        <state line="32" column="6" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-0.64903224" vertical-offset="1079" max-vertical-offset="1854">
           <folding />
         </state>
       </provider>

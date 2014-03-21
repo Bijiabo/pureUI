@@ -1,8 +1,9 @@
 body {
-    color: #777;
+    /*color: #777;*/
+    color: #555;
+    width: 100%;
     overflow-x: hidden;
 }
-
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -51,7 +52,7 @@ The content `<div>` is where all your content goes.
     box-sizing: border-box;/*add*/
     width: 100%;/*add*/
     max-width: 800px;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
     line-height: 1.6em;
     overflow: hidden;
 }
@@ -175,7 +176,7 @@ small screens.
     background: #ffffff;
     background: rgba(255,255,255,0.8);
     font-size: 10px; /* change this value to increase/decrease button size */
-    z-index: 10;
+    z-index: 100;
     width: 2em;
     height: auto;
     padding: 2.1em 1.6em;
@@ -217,15 +218,32 @@ show header-bar in `48em`
 */
 @media (max-width: 48em) {
     #header{
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
         display: block;
         clear: both;
         text-align: center;
         border-bottom: 1px solid #eee;
+        /*position: relative;*/
+/*add new*/
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: #FFF;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    #layout.active #header{
+        left: 150px;
     }
     #header>h1{
         margin: 0.5em 0;
         font-weight: normal;
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
     #content>div{
         -webkit-transition: all 0.2s ease-out;
@@ -234,13 +252,16 @@ show header-bar in `48em`
         -o-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
         position: absolute;
-        top: 2.5em;
-        left: 150%;
+        top: 3.5em;
+        /*left: 150%;*/
+        left: 0;
         right: 0;
         height: auto;
         overflow: auto;
-        padding: 1.5em;
+        padding: 1em;
         opacity: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
     #layout.active #pure-shadow{
         left: 60%;
@@ -254,13 +275,13 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         margin: 0;
         color: #333;
         text-align: center;
-        padding: 1em;
+        padding: 0.2em;
         border-bottom: 1px solid #eee;
     }
-        #header h1 {
-            margin: 0.2em 0;
-            font-size: 3em;
-            font-weight: 300;
+        #header>h1{
+            margin: 0.5em 0;
+            font-weight: normal;
+            font-size: 1.3em;
         }
         #header h2 {
             font-weight: 300;
@@ -371,3 +392,73 @@ public
 .text-left{text-align: left;}
 .text-center{text-align: center;}
 .text-right{text-align: right;}
+.header-button:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-button:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#back{
+    padding: 0.9em 2em 0.9em 1em;
+    /*top: -0.5em;*/
+}
+    #back i.fa{
+        font-size: 1.5em;
+    }
+#menuLink{
+    /*margin: -0.9em 0;*/
+}
+.header-menu-link {
+    /*position: absolute;*/
+    display: block; /* show this only on small screens */
+    /*top: 0;*/
+    /*left: 0; *//* "#menu width" */
+    /*background: #ffffff;*/
+    /*background: rgba(255,255,255,0.8);*/
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 100;
+    width: 2em;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+    .header-menu-link:hover,
+    .header-menu-link:focus {
+        background: #ffffff;
+    }
+
+    .header-menu-link span {
+        position: relative;
+        display: block;
+    }
+
+    .header-menu-link span,
+    .header-menu-link span:before,
+    .header-menu-link span:after {
+        background-color: #000000;
+        width: 100%;
+        height: 0.2em;
+    }
+
+    .header-menu-link span:before,
+    .header-menu-link span:after {
+        position: absolute;
+        margin-top: -0.6em;
+        content: " ";
+        left: 0;
+        /*margin-left: -1em;*/
+    }
+
+    .header-menu-link span:after {
+        margin-top: 0.6em;
+    }
+.pure-light{
+    color: #0078E7;
+}
+#content>div>header{
+    display: none;
+}
